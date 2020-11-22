@@ -2,9 +2,8 @@ version: 2.1
 
 executors:
   android_executor:
-    machine:
-      image: ubuntu-1604:202007-01
-    resource_class: 2xlarge
+    docker:
+      - image: circleci/android:api-29
     working_directory: ~/geekbench-ci
 
 jobs:
