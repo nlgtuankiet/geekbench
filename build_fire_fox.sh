@@ -3,5 +3,5 @@ tar xf ./phoronix-test-suite-10.0.1.tar.gz
 ls -lha
 cd phoronix-test-suite
 ls -lha
-printf '%s\n' y y | ./phoronix-test-suite install pts/build-firefox
-printf '%s\n$s\n\n' y r | ./phoronix-test-suite install pts/build-firefox
+./phoronix-test-suite install pts/build-ffmpeg
+printf '%s\n%s\n%s\n\n\n' y r r | ./phoronix-test-suite run pts/build-ffmpeg
