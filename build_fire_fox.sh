@@ -3,5 +3,7 @@ tar xf ./phoronix-test-suite-10.0.1.tar.gz
 ls -lha
 cd phoronix-test-suite
 ls -lha
-printf '%s\n%s\n%s\n%s\n%s\n%s\n' y y Y R R R | ./phoronix-test-suite benchmark compress-7zip
+mkdir ~/.phoronix-test-suite
+cp ./p_config.xml ~/.phoronix-test-suite/user-config.xml
+printf '%s\n%s\n' y y | ./phoronix-test-suite benchmark compress-7zip
 # yes | ./phoronix-test-suite run pts/x265
