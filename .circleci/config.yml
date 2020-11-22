@@ -4,7 +4,7 @@ executors:
   android_executor:
     docker:
       - image: circleci/android:api-29
-    working_directory: ~/tmp
+    working_directory: ./
 
 jobs:
   bm:
