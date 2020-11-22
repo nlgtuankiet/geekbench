@@ -11,6 +11,6 @@ blocks:
         - name: 'Job #1'
           commands:
             - checkout
-        - name: 'bench'
+        - name: 'bench2'
           commands: 
             - sh ./run.sh
