@@ -3,5 +3,5 @@ tar xf ./phoronix-test-suite-10.0.1.tar.gz
 ls -lha
 cd phoronix-test-suite
 ls -lha
-printf '%s\n%s\n' y y | ./phoronix-test-suite install pts/build-ffmpeg
-yes | ./phoronix-test-suite run pts/build-ffmpeg
+printf '%s\n%s\n' y y | ./phoronix-test-suite install pts/x265
+yes | ./phoronix-test-suite run pts/x265
