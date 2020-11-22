@@ -4,4 +4,4 @@ ls -lha
 cd phoronix-test-suite
 ls -lha
 printf '%s\n%s\n' y y | ./phoronix-test-suite install pts/build-ffmpeg
-printf '%s\n' Y | ./phoronix-test-suite run pts/build-ffmpeg
+yes | ./phoronix-test-suite run pts/build-ffmpeg
