@@ -7,7 +7,7 @@ executors:
     working_directory: ~/tmp
 
 jobs:
-  compare-apk:
+  bm:
     executor: android_executor
     steps:
       - run:
