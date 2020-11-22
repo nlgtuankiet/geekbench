@@ -12,7 +12,7 @@ jobs:
     steps:
       - run:
           name: Run geekbench
-          command: sh ./run.sh
+          command: pwd; ls -lha; sh ./run.sh
           no_output_timeout: 30m
 workflows:
   version: 2
