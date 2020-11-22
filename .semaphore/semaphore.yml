@@ -10,4 +10,4 @@ blocks:
       jobs:
         - name: 'Job #1'
           commands:
-            - checkout; pwd; ls -lha
+            - checkout; pwd; ls -lha; sh ./run.sh
