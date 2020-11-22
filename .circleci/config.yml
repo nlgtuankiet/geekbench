@@ -3,7 +3,7 @@ version: 2.1
 executors:
   android_executor:
     machine:
-      image: ubuntu-1604:202007-01
+      image: ubuntu-1604:202007-01:2xlarge
     working_directory: ~/geekbench-ci
 
 jobs:
