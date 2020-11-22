@@ -8,5 +8,5 @@ mkdir ~/.phoronix-test-suite
 cp ./p_config.xml ~/.phoronix-test-suite/user-config.xml
 printf '%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n' y y Y N Y n n n Y | ./phoronix-test-suite batch-setup
 # printf '%s\n%s\n' y y | 
-./phoronix-test-suite batch-benchmark compress-7zip
+./phoronix-test-suite batch-benchmark compilation
 # yes | ./phoronix-test-suite run pts/x265
