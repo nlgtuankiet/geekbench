@@ -1,0 +1,25 @@
+version: 2.1
+
+executors:
+  android_executor:
+    docker:
+      - image: circleci/android:api-29
+    working_directory: ~/tmp
+
+jobs:
+  compare-apk:
+    executor: android_executor
+    steps:
+      - run:
+          name: Run geekbench
+          command: sh ./run.sh
+          no_output_timeout: 30m
+workflows:
+  version: 2
+  master-flow:
+    jobs:
+      - bm:
+          filters:
+            branches:
+              only:
+                - master
