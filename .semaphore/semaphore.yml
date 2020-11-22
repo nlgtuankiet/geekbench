@@ -13,4 +13,4 @@ blocks:
             - checkout
         - name: 'bench2'
           commands: 
-            - sh ./run.sh
+            - pwd; ls -lha
