@@ -2,6 +2,7 @@ curl https://phoronix-test-suite.com/releases/phoronix-test-suite-10.0.1.tar.gz 
 tar xf ./phoronix-test-suite-10.0.1.tar.gz
 ls -lha
 cd phoronix-test-suite
+
 ls -lha
 mkdir ~/.phoronix-test-suite
 cp ./p_config.xml ~/.phoronix-test-suite/user-config.xml
