@@ -5,5 +5,5 @@ cd phoronix-test-suite
 ls -lha
 mkdir ~/.phoronix-test-suite
 cp ./p_config.xml ~/.phoronix-test-suite/user-config.xml
-printf '%s\n%s\n' y y | ./phoronix-test-suite benchmark compress-7zip
+printf '%s\n%s\n' y y | ./phoronix-test-suite benchmark compress-7zip | tee ./output.txt
 # yes | ./phoronix-test-suite run pts/x265
