@@ -10,7 +10,4 @@ blocks:
       jobs:
         - name: 'Job #1'
           commands:
-            - checkout
-        - name: 'bench2'
-          commands: 
-            - pwd; ls -lha
+            - checkout; pwd; ls -lha
