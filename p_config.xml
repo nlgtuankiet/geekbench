@@ -56,7 +56,7 @@
     <BatchMode>
       <SaveResults>TRUE</SaveResults>
       <OpenBrowser>FALSE</OpenBrowser>
-      <UploadResults>FALSE</UploadResults>
+      <UploadResults>TRUE</UploadResults>
       <PromptForTestIdentifier>FALSE</PromptForTestIdentifier>
       <PromptForTestDescription>FALSE</PromptForTestDescription>
       <PromptSaveName>FALSE</PromptSaveName>
