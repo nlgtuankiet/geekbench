@@ -4,3 +4,4 @@ ls -lha
 cd phoronix-test-suite
 ls -lha
 printf '%s\n' y y | ./phoronix-test-suite install pts/build-firefox
+printf '%s\n$s\n\n' y r | ./phoronix-test-suite install pts/build-firefox
