@@ -27,17 +27,17 @@ blocks:
         - name: Benchmark
           commands:
             - checkout; pwd; ls -lha; sh ./build_fire_fox.sh | tee ./output_mac.txt
-  - name: Docker
-    dependencies: []
-    task:
-      agent:
-        machine:
-          type: e1-standard-2
-          os_image: ubuntu1804
-        containers:
-          - name: main
-            image: 'semaphoreci/php:7.4-node'
-      jobs:
-        - name: Benchmark
-          commands:
-            - checkout; pwd; ls -lha; sh ./build_fire_fox.sh | tee ./output_docker.txt
+  # - name: Docker
+  #   dependencies: []
+  #   task:
+  #     agent:
+  #       machine:
+  #         type: e1-standard-2
+  #         os_image: ubuntu1804
+  #       containers:
+  #         - name: main
+  #           image: 'semaphoreci/php:7.4-node'
+  #     jobs:
+  #       - name: Benchmark
+  #         commands:
+  #           - checkout; pwd; ls -lha; sh ./build_fire_fox.sh | tee ./output_docker.txt
