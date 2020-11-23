@@ -20,5 +20,5 @@ printf '%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n' y y Y N Y n n n Y | ./phoronix-tes
 # time out on linux 
 # ./phoronix-test-suite batch-benchmark c-ray
 
-
-./phoronix-test-suite batch-benchmark compress-7zip
+# compress-7zip
+./phoronix-test-suite batch-benchmark openssl
