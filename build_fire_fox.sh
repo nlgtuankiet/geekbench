@@ -5,7 +5,7 @@ cd phoronix-test-suite
 
 ls -lha
 mkdir ~/.phoronix-test-suite
-cp ./p_config.xml ~/.phoronix-test-suite/user-config.xml
+# cp ./p_config.xml ~/.phoronix-test-suite/user-config.xml
 printf '%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n' y y Y N Y n n n Y | ./phoronix-test-suite batch-setup
 # work on mac + linux
 ./phoronix-test-suite batch-benchmark build-apache
