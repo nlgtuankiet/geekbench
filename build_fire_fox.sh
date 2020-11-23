@@ -21,4 +21,5 @@ printf '%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n' y y Y N Y n n n Y | ./phoronix-tes
 # ./phoronix-test-suite batch-benchmark c-ray
 
 # compress-7zip
-./phoronix-test-suite batch-benchmark openssl
+# openssl
+./phoronix-test-suite batch-benchmark build-php
