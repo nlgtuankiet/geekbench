@@ -17,4 +17,8 @@ printf '%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n' y y Y N Y n n n Y | ./phoronix-tes
 # work on linux
 # ./phoronix-test-suite batch-benchmark build2
 
-./phoronix-test-suite batch-benchmark c-ray
+# time out on linux 
+# ./phoronix-test-suite batch-benchmark c-ray
+
+
+./phoronix-test-suite batch-benchmark compress-7zip
