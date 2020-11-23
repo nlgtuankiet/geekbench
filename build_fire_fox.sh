@@ -7,6 +7,6 @@ ls -lha
 mkdir ~/.phoronix-test-suite
 cp ./p_config.xml ~/.phoronix-test-suite/user-config.xml
 printf '%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n' y y Y N Y n n n Y | ./phoronix-test-suite batch-setup
-# printf '%s\n%s\n' y y | 
-./phoronix-test-suite batch-benchmark compilation
-# yes | ./phoronix-test-suite run pts/x265
+./phoronix-test-suite batch-benchmark build-apache
+./phoronix-test-suite batch-benchmark build-imagemagick
+./phoronix-test-suite batch-benchmark build2
