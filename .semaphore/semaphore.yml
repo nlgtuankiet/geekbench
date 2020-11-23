@@ -36,7 +36,7 @@ blocks:
           os_image: ubuntu1804
         containers:
           - name: main
-            image: 'semaphoreci/ubuntu:18.04'
+            image: 'semaphoreci/php:7.4-node'
       jobs:
         - name: Benchmark
           commands:
