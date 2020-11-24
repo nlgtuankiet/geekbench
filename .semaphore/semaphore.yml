@@ -26,7 +26,7 @@ blocks:
       jobs:
         - name: Benchmark
           commands:
-            - brew install docker; docker run -it nlgtuankiet/benchmark-ci | tee ./output_mac.txt
+            - brew cask install docker; docker run -it nlgtuankiet/benchmark-ci | tee ./output_mac.txt
   # - name: Docker
   #   dependencies: []
   #   task:
