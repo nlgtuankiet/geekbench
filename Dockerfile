@@ -11,7 +11,7 @@ RUN mkdir /opt/geekbench
 RUN tar xzf /tmp/$GEEKBENCHPACKAGE -C /opt/geekbench
 RUN mv /opt/geekbench/$GEEKBENCHVERSION/ /opt/geekbench/linux/
 
-FROM ubuntu:18.04
-COPY --from=build-env /opt/geekbench/linux/ /opt/geekbench/linux/
+#FROM ubuntu:18.04
+#COPY --from=build-env /opt/geekbench/linux/ /opt/geekbench/linux/
 
 CMD ["/opt/geekbench/linux/geekbench5"]
