@@ -5,17 +5,17 @@ agent:
     type: e1-standard-2
     os_image: ubuntu1804
 blocks:
-  - name: Linux
-    task:
-      jobs:
-        - name: Benchmark
-          commands:
-            - docker run -it nlgtuankiet/benchmark-ci | tee ./output_linux.txt
-      agent:
-        machine:
-          type: e1-standard-2
-          os_image: ubuntu1804
-    dependencies: []
+#  - name: Linux
+#    task:
+#      jobs:
+#        - name: Benchmark
+#          commands:
+#            - docker run -it nlgtuankiet/benchmark-ci | tee ./output_linux.txt
+#      agent:
+#        machine:
+#          type: e1-standard-2
+#          os_image: ubuntu1804
+#    dependencies: []
   - name: Mac
     dependencies: []
     task:
@@ -26,7 +26,7 @@ blocks:
       jobs:
         - name: Benchmark
           commands:
-            - docker run -it nlgtuankiet/benchmark-ci | tee ./output_mac.txt
+            - brew install docker; docker run -it nlgtuankiet/benchmark-ci | tee ./output_mac.txt
   # - name: Docker
   #   dependencies: []
   #   task:
