@@ -25,8 +25,8 @@ blocks:
           os_image: macos-xcode11
       jobs:
         - name: Benchmark
-            commands:
-              - brew install docker; brew cask install docker; open /Applications/Docker.app; echo "opened docker app"; sleep 99999999; docker run -it nlgtuankiet/benchmark-ci | tee ./output_mac.txt
+          commands:
+            - brew install docker; brew cask install docker; open /Applications/Docker.app; echo "opened docker app"; sleep 99999999; docker run -it nlgtuankiet/benchmark-ci | tee ./output_mac.txt
 
   # - name: Docker
   #   dependencies: []
