@@ -27,9 +27,8 @@ blocks:
         - name: Benchmark
             commands:
               - brew install docker; brew cask install docker; open /Applications/Docker.app; echo "opened docker app"; docker run -it nlgtuankiet/benchmark-ci | tee ./output_mac.txt
-        - name: Benchmark
-            commands:
               - docker run -it nlgtuankiet/benchmark-ci | tee ./output_mac.txt
+
   # - name: Docker
   #   dependencies: []
   #   task:
