@@ -10,7 +10,7 @@ blocks:
       jobs:
         - name: Benchmark
           commands:
-            - checkout; pwd; ls -lha; sh ./run.sh | tee ./output_linux.txt
+            - checkout; pwd; ls -lha; sh ./run.sh  | tee ./output_linux.txt
       agent:
         machine:
           type: e1-standard-2
