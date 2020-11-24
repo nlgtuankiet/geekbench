@@ -14,4 +14,6 @@ RUN mv /opt/geekbench/$GEEKBENCHVERSION/ /opt/geekbench/linux/
 #FROM ubuntu:18.04
 #COPY --from=build-env /opt/geekbench/linux/ /opt/geekbench/linux/
 
+RUN apt-get install --no-install-recommends -y git
+
 CMD ["/opt/geekbench/linux/geekbench5"]
