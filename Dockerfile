@@ -16,4 +16,4 @@ RUN mv /opt/geekbench/$GEEKBENCHVERSION/ /opt/geekbench/linux/
 
 RUN apt-get install -y git
 
-CMD ["/opt/geekbench/linux/geekbench5"]
+#CMD ["/opt/geekbench/linux/geekbench5"]
