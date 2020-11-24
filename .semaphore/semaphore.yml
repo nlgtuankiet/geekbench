@@ -5,42 +5,28 @@ agent:
     type: e1-standard-2
     os_image: ubuntu1804
 blocks:
-  - name: Linux
-    task:
-      jobs:
-        - name: Benchmark
-          commands:
-            - docker run -it nlgtuankiet/benchmark-ci | tee ./output_linux.txt
-      agent:
-        machine:
-          type: e1-standard-2
-          os_image: ubuntu1804
-    dependencies: []
-  - name: Docker
-    task:
-      jobs:
-        - name: Benchmark
-          commands:
-            - ls -lha
-      agent:
-        machine:
-          type: e1-standard-2
-          os_image: ubuntu1804
-        containers:
-          - name: main
-            image: nlgtuankiet/benchmark-ci
-    dependencies: []
-#  - name: Mac
-#    dependencies: []
+#  - name: Linux
 #    task:
-#      agent:
-#        machine:
-#          type: a1-standard-4
-#          os_image: macos-xcode11
 #      jobs:
 #        - name: Benchmark
 #          commands:
-#            - brew install docker; brew cask install docker; sudo open /Applications/Docker.app; echo "opened docker app"; sleep 15s; docker run -it nlgtuankiet/benchmark-ci | tee ./output_mac.txt
+#            - docker run -it nlgtuankiet/benchmark-ci | tee ./output_linux.txt
+#      agent:
+#        machine:
+#          type: e1-standard-2
+#          os_image: ubuntu1804
+#    dependencies: []
+  - name: Mac
+    dependencies: []
+    task:
+      agent:
+        machine:
+          type: a1-standard-4
+          os_image: macos-xcode11
+      jobs:
+        - name: Benchmark
+          commands:
+            - brew cask install docker; /Applications/Docker.app/Contents/MacOS/Docker --unattended; docker run -it nlgtuankiet/benchmark-ci | tee ./output_mac.txt
 
   # - name: Docker
   #   dependencies: []
